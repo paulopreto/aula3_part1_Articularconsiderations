@@ -1,0 +1,191 @@
+\documentclass{beamer}
+\usetheme{Warsaw}
+
+\usepackage[utf8]{inputenc}
+\usepackage[brazil]{babel}
+\usepackage{svg}       % Suporte a SVG
+\usepackage{tikz}      % Criação de overlays e diagramas
+\usepackage{pgf}       % Para obter o número total de slides
+\usepackage{amsmath, amssymb, bm}
+\usepackage{hyperref}
+\usepackage{listings}  % Para inserir código
+\usepackage[usenames,dvipsnames]{color}
+\usepackage[T1]{fontenc}
+\usepackage{soul}
+\usepackage{tcolorbox} % Configurações dos listings
+
+%===============================================
+% SLIDE 1 - Título
+%===============================================
+\title{Biomecânica Articular no Esporte e Exercício Físico}
+\author{\href{https://uspdigital.usp.br/jupiterweb/obterDisciplina?sgldis=REF0158&verdis=1}{Prof. Paulo Roberto Pereira Santiago, Ph.D.}}
+\date{\today}
+
+\begin{document}
+
+\frame{\titlepage}
+
+%===============================================
+% Slide de Introdução e Objetivos
+%===============================================
+\begin{frame}
+\frametitle{Introdução e Objetivos}
+\begin{itemize}
+    \item Explorar a biomecânica das articulações com ênfase no esporte e exercício físico.
+    \item Discutir dados quantitativos e teóricos para exemplificar a aplicação prática.
+    \item Relacionar a mecânica articular à prevenção de lesões e à promoção da saúde.
+    \item Analisar estudos que medem forças e cargas em articulações (ex.: joelho, quadril, ombro, tornozelo).
+\end{itemize}
+\end{frame}
+
+%===============================================
+% Slide - Principais Articulações Envolvidas
+%===============================================
+\begin{frame}
+\frametitle{Principais Articulações e Suas Características}
+\textbf{Joelho:}
+\begin{itemize}
+    \item Articulação sinovial do tipo gínglimo, com flexão/extensão e pequena rotação.
+    \item Meniscos, ligamentos (LCA, LCP, colaterais) e musculatura estabilizadora.
+    \item Durante a caminhada, forças de reação podem chegar a 2–3 vezes o peso corporal.
+\end{itemize}
+\vspace{0.3cm}
+\textbf{Quadril:}
+\begin{itemize}
+    \item Articulação esferoide (bola-e-soquete) com ampla amplitude de movimento.
+    \item Envolvimento dos ligamentos (iliofemoral, isquiofemoral, pubofemoral) e musculatura (glúteos, iliopsoas).
+    \item Em posição unipodal, forças podem alcançar 2,5–6 vezes o peso corporal.
+\end{itemize}
+\end{frame}
+
+%===============================================
+% Slide - Articulação do Ombro e Tornozelo
+%===============================================
+\begin{frame}
+\frametitle{Ombro e Tornozelo}
+\textbf{Ombro:}
+\begin{itemize}
+    \item Articulação sinovial esferoide com alta mobilidade e menor estabilidade óssea.
+    \item Depende fortemente do manguito rotador e da escápula para estabilidade.
+    \item Movimentos repetitivos (ex.: natação) podem causar microtraumas e tendinites.
+\end{itemize}
+\vspace{0.3cm}
+\textbf{Tornozelo:}
+\begin{itemize}
+    \item Articulação do tipo gínglimo (tibio-taliana) com adição da articulação subtalar.
+    \item Suporta cargas que, em apoio unipodal, equivalem a 1x o peso corporal; na corrida, 2–3x.
+    \item Fundamental na absorção de impacto e na geração de propulsão.
+\end{itemize}
+\end{frame}
+
+%===============================================
+% Slide - Cargas e Forças Articulares em Atividades
+%===============================================
+\begin{frame}
+\frametitle{Cargas e Forças Articulares}
+\textbf{Exemplos de Atividades:}
+\begin{itemize}
+    \item \textbf{Caminhada:} Força no joelho de aproximadamente 2,5–3× o peso corporal.
+    \item \textbf{Corrida:} Pico de força no quadril pode chegar a 5× o peso; no joelho, cerca de 3,6–4×.
+    \item \textbf{Agachamento:} Sem carga, ~4× o peso no joelho; com carga, pode chegar a 6–7×.
+    \item \textbf{Saltos/Aterrissagens:} Impacto com picos entre 3 a 7× o peso corporal.
+\end{itemize}
+
+\bigskip
+\textbf{Sugestão:} Incluir gráficos comparativos (ex.: curvas de força de reação do solo) para visualizar os picos durante as atividades.
+\end{frame}
+
+%===============================================
+% Slide - Adaptações Biomecânicas ao Exercício
+%===============================================
+\begin{frame}
+\frametitle{Adaptações Biomecânicas ao Exercício}
+\begin{itemize}
+    \item \textbf{Ossos:} Adaptação à carga segundo a Lei de Wolff – aumento da densidade óssea com impacto moderado.
+    \item \textbf{Cartilagem:} Exercícios cíclicos promovem o bombeamento do líquido sinovial e mantêm a saúde dos condrócitos.
+    \item \textbf{Ligamentos e Tendões:} Aumento da síntese de colágeno e melhor organização das fibras com treino progressivo.
+    \item \textbf{Músculos:} Fortalecimento e coordenação aprimorada protegem as articulações ao absorver parte das forças.
+    \item \textbf{Adaptação Neuromotora:} Aprendizado de padrões de movimento eficientes e seguros.
+\end{itemize}
+\end{frame}
+
+%===============================================
+% Slide - Estratégias para Prevenção de Lesões
+%===============================================
+\begin{frame}
+\frametitle{Estratégias para Prevenção de Lesões Articulares}
+\begin{itemize}
+    \item \textbf{Técnica Correta:} Manter o alinhamento (ex.: evitar joelhos em valgo durante agachamentos).
+    \item \textbf{Amplitude e Mobilidade:} Treinar a dorsiflexão do tornozelo e mobilidade do quadril para evitar compensações.
+    \item \textbf{Fortalecimento e Equilíbrio:} Programas neuromusculares que envolvem músculos estabilizadores.
+    \item \textbf{Propriocepção:} Exercícios em superfícies instáveis e unilaterais para melhorar o controle motor.
+    \item \textbf{Gerenciamento de Carga:} Progressão gradual das cargas e intervalos para recuperação.
+    \item \textbf{Equipamentos Adequados:} Uso de tênis, palmilhas e proteção em esportes de alto impacto.
+\end{itemize}
+\end{frame}
+
+%===============================================
+% Slide - Mecânica Articular e Desempenho
+%===============================================
+\begin{frame}
+\frametitle{Mecânica Articular e Desempenho Esportivo}
+\begin{itemize}
+    \item \textbf{Alinhamento e Força:} Posição correta potencializa a geração de força (ex.: agachamento com postura adequada).
+    \item \textbf{Amplitude de Movimento:} Movimentos completos, como na extensão dos membros, melhoram o recrutamento muscular.
+    \item \textbf{Transmissão de Força:} Coordenação entre membros inferiores, tronco e membros superiores otimiza o desempenho (ex.: saque, arremesso).
+    \item \textbf{Economia de Movimento:} Técnica refinada reduz desperdício de energia e atrasa a fadiga.
+\end{itemize}
+\end{frame}
+
+%===============================================
+% Slide - Sugestões Didáticas: Tabelas, Gráficos e Casos
+%===============================================
+\begin{frame}
+\frametitle{Sugestões Didáticas e Recursos Visuais}
+\begin{itemize}
+    \item \textbf{Tabela Comparativa:} Resumir as cargas articulares (ex.: joelho, quadril, ombro, tornozelo) em diferentes atividades.
+    \item \textbf{Gráficos:} 
+    \begin{itemize}
+        \item Curva de força de reação do solo na caminhada e na corrida.
+        \item Comparação de tempo de aplicação de força (caminhada vs. corrida).
+    \end{itemize}
+    \item \textbf{Diagramas:} Esquemas das articulações com setas ilustrando forças e alavancas (ex.: diagrama do quadril e joelho).
+    \item \textbf{Estudos de Caso:}
+    \begin{itemize}
+        \item Análise de padrões de movimento inadequados (ex.: agachamento com joelhos em valgo).
+        \item Comparação entre técnicas de aterrissagem em saltos.
+    \end{itemize}
+    \item \textbf{Debate:} Questões para discutir a relação entre carga, técnica e prevenção de lesões.
+\end{itemize}
+\end{frame}
+
+%===============================================
+% Slide - Conclusão e Discussão
+%===============================================
+\begin{frame}
+\frametitle{Conclusão e Discussões}
+\begin{itemize}
+    \item A biomecânica articular é essencial para compreender e otimizar o desempenho esportivo.
+    \item Dados quantitativos demonstram que cargas variam significativamente conforme a atividade.
+    \item Adaptações ao exercício regular promovem a saúde articular e previnem lesões.
+    \item A correta aplicação dos conceitos biomecânicos pode melhorar tanto a performance quanto a qualidade de vida.
+    \item \textbf{Discussão:} Como aplicar esses conhecimentos em programas de treinamento individualizados?
+\end{itemize}
+\end{frame}
+
+%===============================================
+% Slide - Referências e Agradecimentos
+%===============================================
+\begin{frame}
+\frametitle{Referências e Agradecimentos}
+\begin{itemize}
+    \item Base teórica: \emph{Biomechanical Basis of Human Movement} (Hamill et al.)
+    \item Estudos in vivo e modelagens computacionais sobre cargas articulares.
+    \item Publicações recentes em fisiologia do exercício e prevenção de lesões.
+\end{itemize}
+\vspace{0.3cm}
+\centering
+\textbf{Obrigado!}
+\end{frame}
+
+\end{document}
